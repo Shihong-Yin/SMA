@@ -2,7 +2,7 @@ function [Destination_fitness,bestPositions,Convergence_curve] = SMA(N,Max_iter,
 % Max_iter: Maximum iterations, N: Populatoin size, Convergence_curve: Convergence curve
 rand('seed',sum(100 * clock)); % Random number seed
 z = 0.03; % Adjustable parameter
-% Initialize position of slime mould
+% Initialize the position of slime mould
 lb = ones(1,dim).*lb; % Lower boundary 
 ub = ones(1,dim).*ub; % Upper boundary
 X = initialization(N,dim,ub,lb); % It can be downloaded from https://github.com/Shihong-Yin
